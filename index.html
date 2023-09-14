@@ -2,37 +2,79 @@
 <html>
     <style>
         h2{
-            background-color: blue;
-            color:aliceblue;
+            display: inline-block;
         }
         img{
             width: auto;
             height: 200px;
         }
+        p{
+            background-color: blue;
+            display:inline-block;
+            font-size:25px;
+            color:aliceblue;
+        }
+        .content{
+            width:900px;
+            text-align:center;
+            margin:auto;
+            display:flex;
+            flex-direction:row;
+        }
+        #work{
+            display:flex;
+            flex-direction:row;
+            margin:auto;
+            text-align:center;
+            width:900px;
+        }
+        #heading{
+            text-align:center;
+        }
+        .column{
+            width:450px;
+        }
     </style>
     <body>
         <title>Leander Lu | Student Page</title>
-        <h1><a href = "mailto:lxlu@usc.edu">Leander Lu</a></h1>
-        <h2><strong>Blue</strong></h2>
-        <h3><a href = "https://youtube.com/">Favorite Website</a></h3>
-        <img src = "lab2.jpg" alt = "Friends">
-        <h3>Classes</h3>
-        <ol>
-            <li>ITP 104</li>
-            <li>ITP 303</li>
-            <li>DSCI 351</li>
-            <li>ECON 305</li>
-            <li>PHIL 130</li>
-        </ol>
-        <h3>Completed Assignments</h3>
-        <ol>
-            <li><a href = "assignment_01.html">Assignment 1</a></li>
-            <li><a href = "assignment_02.html">Assignment 2</a></li>
-        </ol>
-        <h3>Completed Labs</h3>
-        <ol>
-            <li><a href = "index.html">Lab 2</a></li>
-            <li><a href = "assignment_01.html">Lab 3</a></li>
-        </ol>
+        <div id = "heading">
+            <h1>Leander Lu</h1>
+            <h1><a href = "mailto:lxlu@usc.edu">lxlu@usc.edu</a></h1>
+        </div>
+        <div class = "content">
+            <div class = "column">
+                <h2>Favorite Color:</h2>
+                <p><strong>Blue</strong></p>
+                <h3>Favorite Website:<a href = "https://youtube.com/"> YouTube</a></h3>
+                <h3>Favorite Activity:</h3>
+                <img src = "lab2.jpg" alt = "Friends">
+            </div>
+            <div class = "column">
+                <h3>Classes</h3>
+                <ul>
+                    <li>ITP 104</li>
+                    <li>ITP 303</li>
+                    <li>DSCI 351</li>
+                    <li>ECON 305</li>
+                    <li>PHIL 130</li>
+                </ul>
+            </div>
+        </div>
+            <div id = "work">
+                <div class = "column">
+                    <h3>Completed Assignments</h3>
+                    <ul>
+                        <li><a href = "assignment_01.html">Assignment 1</a></li>
+                        <li><a href = "assignment_02.html">Assignment 2</a></li>
+                    </ul>
+                </div>
+                <div class = "column">
+                    <h3>Completed Labs</h3>
+                    <ul>
+                        <li><a href = "index.html">Lab 2</a></li>
+                        <li><a href = "assignment_01.html">Lab 3</a></li>
+                    </ul>
+                </div>
+            </div>
     </body>
 </html>
