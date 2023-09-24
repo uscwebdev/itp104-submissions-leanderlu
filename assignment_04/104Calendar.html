@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #header{
+                background-image:url("spring.jpg");
+                height:150px;
+                width:1100px;
+                margin:auto;
+            }
+            h1{
+                text-align:center;
+                margin-top:auto;
+                margin-bottom:auto;
+                padding-top:40px;
+                font-size:50px;
+            }
+            table,th,td{
+                border:1px solid black;
+                width:1100px;
+                margin:auto;
+                border-collapse:collapse;
+            }
+            table th{
+                width:157px;
+            }
+            table td{
+                height:25px;
+                width:157px;
+            }
+            #days td{
+                height:135px;
+                width:157px;
+                vertical-align:text-top;
+                padding-top:10px;
+                padding-left:5px;
+            }
+            .grey{
+                background-color: gray;
+            }
+            #cinco{
+                background-image:url(cinco.jpg);
+                background-size:100%;
+                font-weight:bold;
+                background-position:center;
+                background-repeat: no-repeat;
+            }
+            #mothersday{
+                background-image:url("mothersday.jpg");
+                background-size:100%;
+                font-weight:bold;
+                background-position:center;
+                background-repeat: no-repeat;
+            }
+            #birthday{
+                background-image:url("birthday.jpg");
+                background-size:125%;
+                font-weight:bold;
+                background-position:center;
+                background-repeat: no-repeat;
+            }
+            .overlay{
+                padding-top:35px;
+                padding-left:7px;
+                text-align:center;
+                font-size:20px;
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "header">
+            <h1>May 2023</h1>
+        </div>
+        <table>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </table>
+        <div id = "days">
+            <table>
+                <tr>
+                    <td class = "grey"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td id = "cinco">
+                        <div class = "date">5</div>
+                        <div class = "overlay">Cinco De Mayo</div>
+                    </td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td id = "mothersday">
+                        <div class = "date">14</div>
+                        <div class = "overlay">Mother's Day</div>
+                    </td>
+                    <td id = "birthday">
+                        <div class = "date">15</div>
+                        <div class = "overlay">Birthday</div>
+                    </td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td class = "grey"></td>
+                    <td class = "grey"></td>
+                    <td class = "grey"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
