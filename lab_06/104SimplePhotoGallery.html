@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .header{
+                text-align:center;
+            }
+            .photos{
+                display:flex;
+                flex-wrap:wrap;
+                margin:auto;
+                width:1000px;
+                justify-content:center;
+            }
+            .img_container{
+                width:480px;
+                height:auto;
+                overflow:hidden;
+                margin:5px;
+                position:relative;
+            }
+            #Matt{
+                width:440px;
+                height:auto;
+            }
+            .CPMSV{
+                width:450px;
+                height:auto;
+            }
+            .VK{
+                width:250px;
+                height:auto;
+            }
+            .overlay{
+                visibility:hidden;
+                width:100%;
+                transition:0.2s;
+            }
+            .img_container:hover .overlay{
+                visibility:visible;
+            }
+            .img_container img{
+                height:300px;
+                width:auto;
+                display:block;
+            }
+        </style>
+    </head>
+    <body> 
+        <div class = "header">
+            <h1>Gallery</h1>
+            <img src = "img/mlb.png" alt = "mlblogo">
+        </div>          
+        </div>
+        <div class = "photos">
+                <div class = "img_container" id = "Bryce">
+                    <div class = "overlay" id = "overlay1">Bryce Harper</div>
+                    <img src = "img/bryceharper.jpg" alt = "harper">
+                </div>
+                <div class = "img_container" id = "Matt">
+                    <div class = "overlay" id = "overlay2">Matt Olson</div>
+                    <img src = "img/mattolson.jpg" alt = "matt">
+                </div>
+                <div class = "img_container CPMSV">
+                    <div class = "overlay" id = "overlay3">Clayton Kershaw</div>
+                    <img src = "img/kershaw.jpg" alt = "clayton">
+                </div>
+                <div class = "img_container CPMSV">
+                    <div class = "overlay" id = "overlay4">Albert Pujols</div>
+                    <img src = "img/albertpujols.jpg" alt = "pujols">
+                </div>
+                <div class = "img_container CPMSV">
+                    <div class = "overlay" id = "overlay5">Max Scherzer</div>
+                    <img src = "img/scherzer.jpg" alt = "scherzer">
+                </div>
+        </div>
+
+    </body>
+</html>
