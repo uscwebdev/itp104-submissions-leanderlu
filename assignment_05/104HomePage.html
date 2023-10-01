@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Leander Lu | Interests Page</title>
+        <link rel = "stylesheet" href = "style.css">
+        <style>
+            .header{
+                font-size:20px;
+            }
+            .header>img{
+                width:200px;
+                height:200px;
+            }
+            .footer{
+                background-color:lightgreen;
+                text-align:center;
+                width:1000px;
+                margin:auto;
+            }
+            .content{ 
+                margin:auto;
+                display:flex;
+                flex-direction:row;
+                width:1000px;
+            }
+            .sidebar{
+                width:300px;
+                background-color: burlywood;
+            }
+            .sidebar img{
+                width:auto;
+                height:200px;
+                padding-top:13px;
+            }
+            .mookiecaption{
+                visibility:hidden;
+                width:100%;
+                transition:0.5s;
+            }
+            .mookieimg:hover .mookiecaption{
+                visibility:visible;
+            }
+            .shoheicaption{
+                visibility:hidden;
+                width:100%;
+                transition:0.2s;
+            }
+            .shoheiimg:hover .shoheicaption{
+                visibility:visible;
+            }
+            .acunacaption{
+                visibility:hidden;
+                width:100%;
+                transition:0.5s;
+            }
+            .acunaimg:hover .acunacaption{
+                visibility:visible;
+            }
+            .wider{
+                width:700px;
+                text-align:center;
+                background-color: aquamarine;
+            }
+            h2{
+                text-align:center;
+            }
+            .wider>img{
+                float:right;
+                width:100px;
+                height:auto;
+                padding-top:50px;
+                padding-right:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "header">
+            <h1><strong>Baseball</strong></h1>
+            <img src = "img/dodgers-writing.png" alt = "Dodgers">
+        </div>
+        <div class = "menu">
+            <div class = "menuspacer">
+                <div class = "dropdown">
+                    <button class = "home">Home Page</button>
+                    <div class = "home-links">
+                        <a href = "#BestTeams">Best Teams</a>
+                        <a href = "#BestPlayers">Best Players</a>
+                        <a href = "#WorldSeriesPrediction">World Series Prediction</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "menuspacer">
+                <a href = "104Gallery.html">Gallery</a>
+            </div>           
+        </div>
+            <div class = "content">
+                <div class = "sidebar">
+                    <div class = "mookieimg">
+                        <img src = "img/mookie.jpg" alt = "Betts">
+                        <div class = "mookiecaption">Mookie Betts</div>
+                    </div>
+                    <div class = "shoheiimg">
+                        <img src = "img/shohei.jpg" alt = "Ohtani">
+                        <div class = "shoheicaption">Shohei Ohtani</div>
+                    </div>
+                    <div class = "acunaimg">
+                        <img src = "img/acuna.jpg" alt = "Ronald">
+                        <div class = "acunacaption">Ronald Acuna Jr.</div>
+                    </div>
+                </div>
+                <div class = "wider">
+                    <img src = "img/dodgers.png" alt = "dodgerlogo">
+                    <div id = "BestTeams">
+                        <h2 id = "team">Best Teams</h2>
+                            <p>The best teams currently in the MLB are the
+                                Los Angeles Dodgers, Atlanta Braves, and Baltimore
+                                Orioles. These teams have a strong combination of
+                                being able to get on base and hit for power, as well
+                                as having strong starting pitching and reliable bullpen
+                                arms. 
+                            </p>
+                            <p>While the Dodgers and Braves have a mix of new, young talent and
+                                old savvy veterans, the Orioles have graduated their loaded farm
+                                talent which has led to their recent succes. While the teams may be
+                                different, they do one thing the same: win.</p>
+                        </div>
+                    <img src = "img/aaronjudge.jpg" alt = "judge">
+                    <div id = "BestPlayers">
+                        <h2 id = "player">Best Players</h2>
+                        <p>The best players currently in baseball are Mookie Betts, Aaron Judge,
+                            Ronald Acuna Jr, Mike Trout, and Freddie Freeman. These players are both elite
+                            on both offense and defense. Mookie and Freeman are both gold glove winners and
+                            Trout, Judge and Acuna have all graded as top tier defenders. Still, there is one
+                            player above the rest.</p>
+                        <p>This player is Shohei Ohtani. Ohtani is doing something that hasn't been
+                            done since Babe Ruth, which is hitting and pitching at both an elite level. 
+                            This year, Ohtani leads the league in both homeruns and on-base plus slugging. Last
+                            season, he was 3rd in Cy-Young voting. Ohtani is easily the best player in baseball
+                            and most likely the most talented player of all-time.</p>
+                    </div>
+                    <img src = "img/braves.png" alt = "braves">
+                    <div id = "WorldSeriesPrediction">
+                        <h2 id = "WS">World Series Prediction</h2>
+                        <p>As of now, it seems that the World Series will be coming down to the
+                            three teams mentioned above, which are the Dodgers, Braves, and Orioles.
+                            The Dodgers and Braves are both in the National League, so it is possible that
+                            one will have to eliminate the other in order to reach the World Series. The
+                            American League is weaker this year which makes the Orioles path to the 
+                            World Series easier, though the Astros, Mariners, and Rangers are all strong teams.
+                        </p>
+                        <p>Even with all this talent, I believe that the Braves will win the World Series. They
+                            are a team without a weakness. They have the best offense in baseball and one of if not
+                            the best starting rotation as well. Their bullpen isn't elite, but it is solid
+                            enough for them to be my World Series favorites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "footer">Leander Lu | University of Southern California</div>
+    </body>
+</html>
