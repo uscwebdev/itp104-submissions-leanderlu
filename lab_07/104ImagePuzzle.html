@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Puzzle</title>
+        <style>
+            h1{
+                text-align:center;
+            }
+            .photos{
+                display:flex;
+                text-align:center;
+                width:800px;
+                margin:auto;
+                flex-wrap:wrap;
+            }
+            #move{
+                position:relative;
+                padding-left:100px;
+            }
+            #move img{
+                box-shadow:5px 5px;
+            }
+            #movetwice{
+                position:relative;
+                padding-left:150px;
+            }
+            #movetwice img{
+                box-shadow:5px 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Image Puzzle</h1>
+        <div class = "photos">
+            <div id = "move">
+                <img src = "104imgsplit/row-1-column-1.jpg" alt = "first">
+            </div>
+            <img src = "104imgsplit/row-2-column-1.jpg" alt = "second">
+            <img src = "104imgsplit/row-3-column-1.jpg" alt = "third">
+            <img src = "104imgsplit/row-4-column-1.jpg" alt = "fourth">
+            <div id = "movetwice">
+                <img src = "104imgsplit/row-5-column-1.jpg" alt = "fifth">
+            </div>
+            <img src = "104imgsplit/row-6-column-1.jpg" alt = "sixth">
+        </div>
+    </body>
+</html>
