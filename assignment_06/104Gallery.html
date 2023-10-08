@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "style.css">
+        <title>Leander Lu | Gallery</title>
+        <style>
+            .photos{
+                display:flex;
+                flex-wrap:wrap;
+                margin:auto;
+                width:1000px;
+                justify-content:center;
+            }
+            .img_container{
+                width:480px;
+                height:auto;
+                overflow:hidden;
+                margin:5px;
+                position:relative;
+            }
+            #Matt{
+                width:440px;
+                height:auto;
+            }
+            .CPMSV{
+                width:450px;
+                height:auto;
+            }
+            .VK{
+                width:250px;
+                height:auto;
+            }
+            .overlay{
+                background-color: rgba(0, 0, 0, 0.6);
+			    color: #FFF;
+			    font-size: 2em;
+			    text-align: center;
+			    position: absolute;
+			    top: 0px;
+			    left: 0px;
+			    right: 0px;
+			    bottom: 0px;
+			    padding-top: 150px;
+                transform: scale(2);
+			    transition: all 1s;
+			    opacity: 0;
+                overflow:hidden;
+            }
+            .img_container:hover .overlay{
+                transform: scale(1);
+			    opacity: 1;
+            }
+            .img_container img{
+                height:300px;
+                width:auto;
+                display:block;
+            }
+        </style>
+    </head>
+    <body> 
+        <div class = "header">
+            <h1>Gallery</h1>
+            <img src = "img/mlb.png" alt = "mlblogo">
+        </div>
+        <div class = "menu">
+            <div class = "menuspacer">
+                <div class = "dropdown">
+                    <button class = "home">Home Page</button>
+                    <div class = "home-links">
+                        <a href = "104HomePage.html#BestTeams">Best Teams</a>
+                        <a href = "104HomePage.html#BestPlayers">Best Players</a>
+                        <a href = "104HomePage.html#WorldSeriesPrediction">World Series Prediction</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "menuspacer">
+                <a href = "104Gallery.html">Gallery</a>
+            </div>           
+        </div>
+        <div class = "photos">
+                <div class = "img_container" id = "Bryce">
+                    <div class = "overlay" id = "overlay1">Bryce Harper</div>
+                    <img src = "img/bryceharper.jpg" alt = "harper">
+                </div>
+                <div class = "img_container" id = "Matt">
+                    <div class = "overlay" id = "overlay2">Matt Olson</div>
+                    <img src = "img/mattolson.jpg" alt = "matt">
+                </div>
+                <div class = "img_container CPMSV">
+                    <div class = "overlay" id = "overlay3">Clayton Kershaw</div>
+                    <img src = "img/kershaw.jpg" alt = "clayton">
+                </div>
+                <div class = "img_container CPMSV">
+                    <div class = "overlay" id = "overlay4">Albert Pujols</div>
+                    <img src = "img/albertpujols.jpg" alt = "pujols">
+                </div>
+                <div class = "img_container CPMSV">
+                    <div class = "overlay" id = "overlay5">Max Scherzer</div>
+                    <img src = "img/scherzer.jpg" alt = "scherzer">
+                </div>
+                <div class = "img_container VK">
+                    <div class = "overlay" id = "overlay6">Ketel Marte</div>
+                    <img src = "img/ketelmarte.jpg" alt = "marte">
+                </div>
+                <div class = "img_container VK">
+                    <div class = "overlay" id = "overlay7">Vladimir Guerrero Jr.</div>
+                    <img src = "img/vladdy.jpg" alt = "vladdy">
+                </div>
+                <div class = "img_container CPMSV">
+                    <div class = "overlay" id = "overlay8">Corey Seager</div>
+                    <img src = "img/coreyseager.jpg" alt = "seager">
+                </div>
+                <div class = "img_container" id = "Adley">
+                    <div class = "overlay" id = "overlay9">Adley Rutschman</div>
+                    <img src = "img/adley.jpg" alt = "rutschman">
+                </div>
+                <div class = "img_container CPMSV">
+                    <div class = "overlay" id = "overlay10">Justin Verlander</div>
+                    <img src = "img/verlander.jpg" alt = "justin"> 
+                </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,57 @@
+@font-face{
+    font-family:"Lato";
+    src:url("Lato/Lato-Black.ttf");
+}
+@font-face{
+    font-family:"Nunito";
+    src:url("Nunito/Nunito-Black.ttf")
+}
+.header{
+    text-align:center;
+    font-family: Lato, sans-serif;
+}
+.menuspacer{
+    width:498px;
+    height:70px;
+    background-color: lightblue;
+    float:left;
+    font-size:25px;
+    line-height:70px;
+    text-align:center;
+    border:1px solid black;
+}
+.menu{
+    width:1000px;
+    text-align:center;
+    margin:auto;
+    font-family: Lato, sans-serif;
+}
+.dropdown{
+    float:left;
+}
+.home-links a {
+    color: black;
+    display: block;
+}
+.home {
+    background-color: lightblue;
+    color:black;
+    text-align:center;
+    font-size: 25px;
+    border:none;
+    font-family: Lato, sans-serif;
+    width:498px;
+  }
+  .home-links{
+    display: none;
+    position: absolute;
+    background-color:lightblue;
+    width: 498px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.home-links a:hover {background-color:lightblue;}
+
+.dropdown:hover .home-links{display: block;}
+
+.dropdown:hover .home {background-color: lightblue;}
