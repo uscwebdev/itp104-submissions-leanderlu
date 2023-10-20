@@ -1,87 +1,113 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        h2{
-            display: inline-block;
-        }
-        img{
-            width: auto;
-            height: 200px;
-        }
-        p{
-            background-color: blue;
-            display:inline-block;
-            font-size:25px;
-            color:aliceblue;
-        }
-        .content{
-            width:900px;
-            text-align:center;
-            margin:auto;
-            display:flex;
-            flex-direction:row;
-        }
-        #work{
-            display:flex;
-            flex-direction:row;
-            margin:auto;
-            text-align:center;
-            width:900px;
-        }
-        #heading{
-            text-align:center;
-        }
-        .column{
-            width:450px;
-        }
-    </style>
-    <body>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
         <title>Leander Lu | Student Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            h2{
+                display: inline-block;
+            }
+            img{
+                width: auto;
+                height: 200px;
+            }
+            p{
+                background-color: blue;
+                display:inline-block;
+                font-size:25px;
+                color:aliceblue;
+            }
+            .content{
+                width:100%;
+                text-align:center;
+                margin:auto;
+                display:flex;
+                flex-direction:row;
+                flex-wrap:wrap;
+                padding-top:50px;
+                justify-content:center;
+            }
+            #classes{
+                padding-top:25px;
+            }
+            #heading{
+                text-align:center;
+            }
+            #labs{
+                padding-top:160px;
+            }
+            .row{
+                width:450px;
+            }
+            @media(max-width:768px){
+                .content {
+                    flex-direction: column;
+                    align-items: center;
+                    width:100%;
+                }
+                #labs{
+                    padding-top:0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
         <div id = "heading">
             <h1>Leander Lu</h1>
             <h1><a href = "mailto:lxlu@usc.edu">lxlu@usc.edu</a></h1>
         </div>
         <div class = "content">
-            <div class = "column">
-                <h2>Favorite Color:</h2>
-                <p><strong>Blue</strong></p>
-                <h3>Favorite Website:<a href = "https://youtube.com/"> YouTube</a></h3>
-                <h3>Favorite Activity:</h3>
-                <img src = "lab2.jpg" alt = "Friends">
+            <div class = "others">
+                <div class = "row">
+                    <div id = "stuff">
+                        <h2>Favorite Color:</h2>
+                        <p><strong>Blue</strong></p>
+                        <h3>Favorite Website:<a href = "https://youtube.com/"> YouTube</a></h3>
+                        <h3>Favorite Activity:</h3>
+                        <img src = "lab2.jpg" alt = "Friends">
+                    </div>
+                </div>
+                <div class = "row">
+                    <div id = "classes">
+                        <h3>Classes</h3>
+                        <ul>
+                            <li>ITP 104</li>
+                            <li>ITP 303</li>
+                            <li>DSCI 351</li>
+                            <li>ECON 305</li>
+                            <li>PHIL 130</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class = "column">
-                <h3>Classes</h3>
-                <ul>
-                    <li>ITP 104</li>
-                    <li>ITP 303</li>
-                    <li>DSCI 351</li>
-                    <li>ECON 305</li>
-                    <li>PHIL 130</li>
-                </ul>
+            <div id = "work">
+                <div class = "row">
+                    <div id = "assignments">
+                        <h3>Completed Assignments</h3>
+                        <ul>
+                            <li><a href = "assignment_01.html">Assignment 1</a></li>
+                            <li><a href = "assignment_02/104interestspage.html" target = "_blank">Assignment 2</a></li>
+                            <li><a href = "assignment_03/104interestspage2.html" target = "_blank">Assignment 3</a></li>
+                            <li><a href = "assignment_04/104Calendar.html" target = "_blank">Assignment 4</a></li>
+                            <li><a href = "assignment_05/104HomePage.html" target = "_blank">Assignment 5</a></li>
+                            <li><a href = "assignment_06/104HomePage.html" target = "_blank">Assignment 6</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div id = "labs">
+                        <h3>Completed Labs</h3>
+                        <ul>
+                            <li><a href = "index.html">Lab 2</a></li>
+                            <li><a href = "assignment_01.html">Lab 3</a></li>
+                            <li><a href = "lab_05/104FormPage.html">Lab 5</a></li>
+                            <li><a href = "lab_06/104SimplePhotoGallery.html">Lab 6</a></li>
+                            <li><a href = "lab_07/104ImagePuzzle.html">Lab 7</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-            <div id = "work">
-                <div class = "column">
-                    <h3>Completed Assignments</h3>
-                    <ul>
-                        <li><a href = "assignment_01.html">Assignment 1</a></li>
-                        <li><a href = "assignment_02/104interestspage.html" target = "_blank">Assignment 2</a></li>
-                        <li><a href = "assignment_03/104interestspage2.html" target = "_blank">Assignment 3</a></li>
-                        <li><a href = "assignment_04/104Calendar.html" target = "_blank">Assignment 4</a></li>
-                        <li><a href = "assignment_05/104HomePage.html" target = "_blank">Assignment 5</a></li>
-                        <li><a href = "assignment_06/104HomePage.html" target = "_blank">Assignment 6</a></li>
-                    </ul>
-                </div>
-                <div class = "column">
-                    <h3>Completed Labs</h3>
-                    <ul>
-                        <li><a href = "index.html">Lab 2</a></li>
-                        <li><a href = "assignment_01.html">Lab 3</a></li>
-                        <li><a href = "lab_05/104FormPage.html">Lab 5</a></li>
-                        <li><a href = "lab_06/104SimplePhotoGallery.html">Lab 6</a></li>
-                        <li><a href = "lab_07/104ImagePuzzle.html">Lab 7</a></li>
-                    </ul>
-                </div>
-            </div>
     </body>
 </html>
