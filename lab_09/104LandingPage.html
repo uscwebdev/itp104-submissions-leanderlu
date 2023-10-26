@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify Landing Page</title>
+        <style>
+            @font-face{
+                font-family:"Spotify-Font";
+                src:url("Spotify-Font/Gotham-Black.otf");
+            }
+            html{
+                height:100%;
+                background:linear-gradient(to right, #1DB954 50%, black 50%)
+            }
+            #content{
+                font-family:Spotify-Font, sans-serif;
+            }
+            .main{
+                width:1800px;
+                margin:auto;
+                display:flex;
+                flex-direction:row;
+                color:#1DB954;
+            }
+            #heading{
+                text-align:center;
+                padding-right:46px;
+            }
+            #heading img{
+                margin:10px;
+                width:325px;
+                height:auto;
+            }
+            .about{
+                width:900px;
+                font-size:22px;
+                text-align:right;
+            }
+            .about h1{
+                font-size:100px;
+                margin:auto;
+                padding-bottom:25px;
+            }
+            .about p{
+                padding-bottom:10px;
+            }
+            .vid{
+                width:900px;
+                font-size:22px;
+                text-align:center;
+                color:black;
+            }
+            .vid video{
+                width:800px;
+                padding-right:70px;
+                padding-top:15px;
+            }
+            .mission{
+                text-align:left;
+            }
+            .mission h1{
+                font-size:100px;
+                margin:auto;
+                padding-bottom:25px;
+            }
+            .downloadButton{
+                padding-top:120px;
+                text-align:center;
+                padding-left:80px;
+            }
+            .download{
+                background-color:#1DB954;
+                color:black;
+                margin:auto;
+                border-radius:25px;
+                border:none;
+                padding:15px 15px;
+                font-family:Spotify-Font, sans-serif;
+                font-size:40px;
+                transition:0.5s;
+            }
+            .download:hover{
+                transform:scale(1.2);
+                transition:0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "content">
+            <div id = "heading">
+                <img src = "spotifylogo.png" alt = "spotifylogo">
+            </div>
+            <div class = "main">
+                <div class = "vid">
+                    <div class = "mission">
+                        <h1><strong>Our Mission</strong></h1>
+                        <p>Our mission is to unlock the potential of human creativity—by giving a million creative artists the opportunity to live off their art and billions of fans the opportunity to enjoy and be inspired by it.</p>
+                    </div>
+                    <video controls>
+                        <source src = "IntroducingDJSpotify.mp4">
+                    </video>
+                </div>
+                <div class = "about">
+                    <h1><strong>About Us</strong></h1>
+                    <p>Spotify's platform revolutionized music listening forever when we launched in 2008. Our move into podcasting brought innovation and a new generation of listeners to the medium, and in 2022 we entered the next audio market primed for growth with the addition of audiobooks.</p>
+                    <p>Today, more listeners than ever can discover, manage, and enjoy over 100 million tracks, 5 million podcasts titles, and 350,000 audiobooks a la carte on Spotify. We are the world’s most popular audio streaming subscription service with more than 574 million users, including 226 million subscribers in more than 180 markets.</p>
+                    <div class = "downloadButton">
+                        <button class = "download" onclick = "redirect()"><strong>Download Spotify</strong></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function redirect() {
+            window.location.href = "https://www.spotify.com/us/download/"
+        }
+    </script>
+</html>
