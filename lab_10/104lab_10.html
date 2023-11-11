@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Leander Lu | Lab 10</title>
+        <style>
+            h1{
+                text-align:center;
+            }
+            .imagecontainer{
+                height:200px;
+                width:200px;
+                position:relative;
+                margin:auto;
+                justify-content:center;
+                align-content:center;
+            }
+            .imagecontainer img{
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
+            .imagecontainer:hover .tigers{
+                transform:rotate(15deg) translateX(160px);
+                transition: transform 0.5s;
+            }
+            .imagecontainer:hover .whitesox{
+                transform:rotate(-15deg) translateX(-160px);
+                transition: transform 0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lab 10</h1>
+        <div class = "imagecontainer">
+            <img src = "img/tigers.png" alt = "Tigers" class = "tigers">
+            <img src = "img/twins.png" alt = "Twins" class = "twins">
+            <img src = "img/whitesox.png" alt = "White Sox" class = "whitesox">
+        </div>
+    </body>
+</html>
