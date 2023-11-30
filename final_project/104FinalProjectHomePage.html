@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name = "description" content = "This is the home page of my final project. The search function connects to an API that will show the rosters of a specific team. It also displays the standings and player of the day.">
+        <link rel = "stylesheet" href = "style.css">
+        <title>Leander Lu | 104 Final Project Final-End Pages</title>
+        <style>
+            .maincontent{
+                width:1500px;
+                text-align:center;
+                margin:auto;
+            }
+            .contentspacer{
+                width:496px;
+                height:750px;
+                float:left;
+                font-size:20px;
+                line-height:40px;
+                text-align:center;
+                border:2px solid blue;
+                margin-top:25px;
+            }
+            #teamsearch{
+                border:none;
+            }
+            .teamstandings{
+                display:flex;
+                flex-direction:row;
+                text-align:center;
+            }
+            .league{
+                width:50%;
+            }
+            #nl{
+                font-size:15px;
+            }
+            #al{
+                font-size:15px;
+            }
+            .teamstandings ol li{
+                line-height:20px;
+            }
+            #potd img{
+                width:400px;
+                height:auto;
+            }
+            #teamsearched{
+                width:300px;
+                height:auto;
+                font-size:20px;
+                margin-top:15px;
+                margin-bottom:15px;
+            }
+            #teamsearch{
+                text-align:center;
+            }
+            #search{
+                font-size:20px;
+            }
+            .searchresults{
+                width:100%;
+            }
+            .roster{
+                width:100%;
+                max-height:436px;
+                overflow-y:auto;
+                flex-wrap:wrap;
+                display:flex;
+                flex-direction:row;
+            }
+            .player {
+                width: 50%; 
+                margin-bottom: 10px;
+            }
+            @media (max-width: 767px) {
+                #menu{
+                    width:100%;
+                }
+                .menuspacer{
+                    width:100%;
+                }
+                .dropdown{
+                    width:100%;
+                }
+                .teams{
+                    width:98%;
+                }
+                .team-links{
+                    width:97%;
+                }
+                .maincontent {
+                    width:100%;
+                }
+                .contentspacer{
+                    width:100%;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                #menu{
+                    width:100%;
+                }
+                .menuspacer{
+                    width:100%;
+                }
+                .dropdown{
+                    width:100%;
+                }
+                .teams{
+                    width:98%;
+                }
+                .team-links{
+                    width:97%;
+                }
+                .maincontent {
+                    width:100%;
+                }
+                .contentspacer{
+                    width:100%;
+                }
+            }
+
+            @media (min-width: 992px) and (max-width: 1199px){
+                #menu{
+                    width:100%;
+                }
+                .menuspacer{
+                    width:100%;
+                }
+                .dropdown{
+                    width:100%;
+                }
+                .teams{
+                    width:98%;
+                }
+                .team-links{
+                    width:97%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "content">
+            <div id = "header">
+                <h1><strong>Baseball Nerds</strong></h1>
+            </div>
+            <div id = "menu">
+                <div class = "menuspacer">
+                    <a href = "104FinalProjectHomePage.html">Home</a>
+                </div>
+                <div class = "menuspacer">
+                    <div class = "dropdown">
+                        <button class = "teams" onclick = "window.location.href='104FinalProjectTeams.html'">Teams</button>
+                        <div class = "team-links">
+                            <a href = "104FinalProjectTeams.html#dbacks">Arizona Diamondbacks</a>
+                            <a href = "104FinalProjectTeams.html#braves">Atlanta Braves</a>
+                            <a href = "104FinalProjectTeams.html#orioles">Baltimore Orioles</a>
+                            <a href = "104FinalProjectTeams.html#redsox">Boston Red Sox</a>
+                            <a href = "104FinalProjectTeams.html#whitesox">Chicago White Sox</a>
+                            <a href = "104FinalProjectTeams.html#cubs">Chicago Cubs</a>
+                            <a href = "104FinalProjectTeams.html#reds">Cincinnati Reds</a>
+                            <a href = "104FinalProjectTeams.html#guardians">Cleveland Guardians</a>
+                            <a href = "104FinalProjectTeams.html#rockies">Colorado Rockies</a>
+                            <a href = "104FinalProjectTeams.html#tigers">Detroit Tigers</a>
+                            <a href = "104FinalProjectTeams.html#astros">Houston Astros</a>
+                            <a href = "104FinalProjectTeams.html#royals">Kansas City Royals</a>
+                            <a href = "104FinalProjectTeams.html#angels">Los Angeles Angels</a>
+                            <a href = "104FinalProjectTeams.html#dodgers">Los Angeles Dodgers</a>
+                            <a href = "104FinalProjectTeams.html#marlins">Miami Marlins</a>
+                            <a href = "104FinalProjectTeams.html#brewers">Milwaukee Brewers</a>
+                            <a href = "104FinalProjectTeams.html#twins">Minnesota Twins</a>
+                            <a href = "104FinalProjectTeams.html#yankees">New York Yankees</a>
+                            <a href = "104FinalProjectTeams.html#mets">New York Mets</a>
+                            <a href = "104FinalProjectTeams.html#athletics">Oakland Athletics</a>
+                            <a href = "104FinalProjectTeams.html#phillies">Philadelphia Phillies</a>
+                            <a href = "104FinalProjectTeams.html#pirates">Pittsburgh Pirates</a>
+                            <a href = "104FinalProjectTeams.html#padres">San Diego Padres</a>
+                            <a href = "104FinalProjectTeams.html#giants">San Francisco Giants</a>
+                            <a href = "104FinalProjectTeams.html#mariners">Seattle Mariners</a>
+                            <a href = "104FinalProjectTeams.html#cardinals">St. Louis Cardinals</a>
+                            <a href = "104FinalProjectTeams.html#rays">Tampa Bay Rays</a>
+                            <a href = "104FinalProjectTeams.html#rangers">Texas Rangers</a>
+                            <a href = "104FinalProjectTeams.html#jays">Toronto Blue Jays</a>
+                            <a href = "104FinalProjectTeams.html#nats">Washington Nationals</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "menuspacer">
+                    <a href = "104FinalProjectBlogs.html">Blogs</a>
+                </div>        
+            </div>
+            <div class = "maincontent">
+                <div class = "contentspacer" id = "standings">
+                    <h2>Standings</h2>
+                    <div class = "teamstandings">
+                        <div class = "league" id = "al">
+                            <div class = "aleast">
+                                <h3>AL East</h3>
+                                <ol>
+                                    <li>Orioles (101-61)</li>
+                                    <li>Rays (99-63)</li>
+                                    <li>Blue Jays (89-73)</li>
+                                    <li>Yankees (82-80)</li>
+                                    <li>Red Sox (78-84)</li>
+                                </ol>
+                            </div>
+                            <div class = "alcentral">
+                                <h3>AL Central</h3>
+                                <ol>
+                                    <li>Twins (87-75)</li>
+                                    <li>Tigers (78-84)</li>
+                                    <li>Guardians (76-86)</li>
+                                    <li>White Sox (61-101)</li>
+                                    <li>Royals (56-106)</li>
+                                </ol>
+                            </div>
+                            <div class = "alwest">
+                                <h3>AL West</h3>
+                                <ol>
+                                    <li>Astros (90-72)</li>
+                                    <li>Rangers (90-72)</li>
+                                    <li>Mariners (88-74)</li>
+                                    <li>Angels (73-89)</li>
+                                    <li>Athletics (50-112)</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class = "league" id = "nl">
+                            <div class = "nleast">
+                                <h3>NL East</h3>
+                                <ol>
+                                    <li>Braves (104-58)</li>
+                                    <li>Phillies (90-72)</li>
+                                    <li>Marlines (84-78)</li>
+                                    <li>Mets (75-87)</li>
+                                    <li>Nationals (71-91)</li>
+                                </ol>
+                            </div>
+                            <div class = "nlcentral">
+                                <h3>NL Central</h3>
+                                <ol>
+                                    <li>Brewers (92-70)</li>
+                                    <li>Cubs (83-79)</li>
+                                    <li>Reds (82-80)</li>
+                                    <li>Pirates (76-86)</li>
+                                    <li>Cardinals (71-91)</li>
+                                </ol>
+                            </div>
+                            <div class = "nlwest">
+                                <h3>NL West</h3>
+                                <ol>
+                                    <li>Dodgers (100-62)</li>
+                                    <li>Diamondbacks (84-78)</li>
+                                    <li>Padres (82-80)</li>
+                                    <li>Giants (79-83)</li>
+                                    <li>Rockies (59-103)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class = "contentspacer" id = "teamsearch">
+                    <h2>Roster Search</h2>
+                    <div class = container>
+                        <form id = "team-search">
+                            <div class = "form-group row" id = "search">
+                                <label for = "teamsearched" class = "col-sm-2 col-form-label">Search Team:</label>
+                                <div class = "col-sm-10">
+                                    <input type = "text" name = "team-search" class = "form-control" placeholder = "Search City and Team Name" id = "teamsearched">
+                                </div>
+                            </div>
+                            <div class = "form-group row">
+                                <button type = "submit" class = "btn btn-primary">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class = "searchresults">
+                        <div class = "teamname">
+                        </div>
+                        <div class = "roster">
+                        </div>
+                    </div>
+                </div>
+                <div class = "contentspacer" id = "potd">
+                    <h2>Shohei Ohtani</h2>
+                    <img src = "img/shohei2.jpg" alt = "Shohei Ohtani">
+                </div>
+            </div> 
+        </div>
+        <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                const settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://baseball4.p.rapidapi.com/v1/mlb/teams",
+                    "method": "GET",
+                    "headers": {
+                        "X-RapidAPI-Key": "2b33bba548msh56fc3d6f1fe4553p1c9021jsn5855ec5712ee",
+                        "X-RapidAPI-Host": "baseball4.p.rapidapi.com"
+                    }
+                };
+
+                $.ajax(settings)
+                .done(function (response) {
+                    console.log("Success:", response);
+                })
+                .fail(function (jqXHR, textStatus, errorThrown) {
+                    console.error("Error:", textStatus, errorThrown);
+                })
+                .always(function () {
+                    console.log("AJAX request completed");
+                });
+            });
+            document.querySelector('#team-search').onsubmit = function(event){
+                event.preventDefault();
+                let query = $("#teamsearched").val().trim();
+                const settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://baseball4.p.rapidapi.com/v1/mlb/teams",
+                    "method": "GET",
+                    "headers": {
+                        "X-RapidAPI-Key": "2b33bba548msh56fc3d6f1fe4553p1c9021jsn5855ec5712ee",
+                        "X-RapidAPI-Host": "baseball4.p.rapidapi.com"
+                    }
+                };
+
+                $.ajax(settings)
+                .done(function (response) {
+                    console.log("Success:", response);
+                    getTeamData(query);
+                })
+                .fail(function (jqXHR, textStatus, errorThrown) {
+                    console.error("Error:", textStatus, errorThrown);
+                })
+                .always(function () {
+                    console.log("AJAX request completed");
+                });
+            }
+            function getTeamData(query) {
+                const settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://baseball4.p.rapidapi.com/v1/mlb/teams",
+                    "method": "GET",
+                    "headers": {
+                        "X-RapidAPI-Key": "2b33bba548msh56fc3d6f1fe4553p1c9021jsn5855ec5712ee",
+                        "X-RapidAPI-Host": "baseball4.p.rapidapi.com"
+                    }
+                };
+
+                $.ajax(settings).done(function (response) {
+                    console.log("works");
+                    const teamsArray = response.body;
+                    for (var i = 0; i < teamsArray.length; i++) {
+                        console.log("works2")
+                        const teamId = teamsArray[i].id;
+                        const teamName = teamsArray[i].name;
+                        if (teamName.toLowerCase() == query.toLowerCase()){
+                            displayTeamRosters(teamId, teamName)
+                        }
+                    }
+                });
+            }
+            function displayTeamRosters(teamId, teamName) {
+                const settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": `https://baseball4.p.rapidapi.com/v1/mlb/teams-roster?teamIds=${teamId}`,
+                    "method": "GET",
+                    "headers": {
+                        "X-RapidAPI-Key": "2b33bba548msh56fc3d6f1fe4553p1c9021jsn5855ec5712ee",
+                        "X-RapidAPI-Host": "baseball4.p.rapidapi.com"
+                    }
+                };
+
+                $.ajax(settings).done(function (response) {
+                    console.log("Roster data for team:", teamName, response);
+                    let playersHtml = '';
+                    const rosterArray = response.body.roster;
+                    console.log(rosterArray);
+                    for (var i = 0; i < rosterArray.length; i++) {
+                        console.log("works3");
+                        playersHtml += `<div class = "player">${rosterArray[i].person.fullName}</div>`;
+                    }
+
+                    const teamHtml = `<h2>${teamName}</h2>`;
+                    $(".teamname").html(teamHtml);
+                    $(".roster").html(playersHtml);
+                });
+            }
+        </script>
+    </body>
+</html>

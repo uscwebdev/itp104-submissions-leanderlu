@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name = "description" content = "This page contains all the teams and their logos. I plan on adding details such as their stadium names to each team by using an API.">
+        <link rel = "stylesheet" href = "style.css">
+        <title>Leander Lu | 104 Final Project Final-End Pages</title>
+        <style>
+            .card{
+                height:300px;
+                width:1000px;
+                margin:auto;
+                border:3px solid blue;
+                margin-bottom:15px;
+            }
+            .cardcontent{
+                display:flex;
+                align-content:center;
+                justify-content:center;
+            }
+            .card img{
+                height:70px;
+                width:auto;
+            }
+            .teamcontent{
+                text-align:center;
+                display:block;
+                width:100%;
+            }
+            #menu{
+                margin-bottom:75px;
+            }
+            ul{
+                list-style-type: none;
+                float:left;
+                font-size:20px;
+                text-align:left;
+                padding-left:175px;
+            }       
+            li{
+                margin-bottom:15px;
+            }
+            @media (max-width: 767px) {
+                #menu{
+                    width:100%;
+                }
+                .menuspacer{
+                    width:100%;
+                }
+                .dropdown{
+                    width:100%;
+                }
+                .teams{
+                    width:98%;
+                }
+                .team-links{
+                    width:97%;
+                }
+                .teamcontent{
+                    width:100%;
+                    padding-top:100px;
+                }
+                .card{
+                    width:100%;
+                    height:650px;
+                }
+                .cardcontent{
+                    display:inline-block;
+                }
+                ul{
+                    padding-left:0;
+                    text-align:center;
+                    float: none;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                #menu{
+                    width:100%;
+                }
+                .menuspacer{
+                    width:100%;
+                }
+                .dropdown{
+                    width:100%;
+                }
+                .teams{
+                    width:98%;
+                }
+                .team-links{
+                    width:97%;
+                }
+                .teamcontent{
+                    width:100%;
+                    padding-top:100px;
+                }
+                .card{
+                    width:100%;
+                    height:650px;
+                }
+                .cardcontent{
+                    display:inline-block;
+                }
+                ul{
+                    padding-left:0;
+                    text-align:center;
+                    float: none;
+                }
+            }
+
+            @media (min-width: 992px) and (max-width: 1199px){
+                #menu{
+                    width:100%;
+                }
+                .menuspacer{
+                    width:100%;
+                }
+                .dropdown{
+                    width:100%;
+                }
+                .teams{
+                    width:98%;
+                }
+                .team-links{
+                    width:97%;
+                }
+                .teamcontent{
+                    padding-top:100px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id = content>
+            <div id = "header">
+                <h1>Teams</h1>
+            </div>
+            <div id = "menu">
+                <div class = "menuspacer">
+                    <a href = "104FinalProjectHomePage.html">Home</a>
+                </div>
+                <div class = "menuspacer">
+                    <div class = "dropdown">
+                        <button class = "teams" onclick = "window.location.href='104FinalProjectTeams.html'">Teams</button>
+                        <div class = "team-links">
+                            <a href = "104FinalProjectTeams.html#dbacks">Arizona Diamondbacks</a>
+                            <a href = "104FinalProjectTeams.html#braves">Atlanta Braves</a>
+                            <a href = "104FinalProjectTeams.html#orioles">Baltimore Orioles</a>
+                            <a href = "104FinalProjectTeams.html#redsox">Boston Red Sox</a>
+                            <a href = "104FinalProjectTeams.html#whitesox">Chicago White Sox</a>
+                            <a href = "104FinalProjectTeams.html#cubs">Chicago Cubs</a>
+                            <a href = "104FinalProjectTeams.html#reds">Cincinnati Reds</a>
+                            <a href = "104FinalProjectTeams.html#guardians">Cleveland Guardians</a>
+                            <a href = "104FinalProjectTeams.html#rockies">Colorado Rockies</a>
+                            <a href = "104FinalProjectTeams.html#tigers">Detroit Tigers</a>
+                            <a href = "104FinalProjectTeams.html#astros">Houston Astros</a>
+                            <a href = "104FinalProjectTeams.html#royals">Kansas City Royals</a>
+                            <a href = "104FinalProjectTeams.html#angels">Los Angeles Angels</a>
+                            <a href = "104FinalProjectTeams.html#dodgers">Los Angeles Dodgers</a>
+                            <a href = "104FinalProjectTeams.html#marlins">Miami Marlins</a>
+                            <a href = "104FinalProjectTeams.html#brewers">Milwaukee Brewers</a>
+                            <a href = "104FinalProjectTeams.html#twins">Minnesota Twins</a>
+                            <a href = "104FinalProjectTeams.html#yankees">New York Yankees</a>
+                            <a href = "104FinalProjectTeams.html#mets">New York Mets</a>
+                            <a href = "104FinalProjectTeams.html#athletics">Oakland Athletics</a>
+                            <a href = "104FinalProjectTeams.html#phillies">Philadelphia Phillies</a>
+                            <a href = "104FinalProjectTeams.html#pirates">Pittsburgh Pirates</a>
+                            <a href = "104FinalProjectTeams.html#padres">San Diego Padres</a>
+                            <a href = "104FinalProjectTeams.html#giants">San Francisco Giants</a>
+                            <a href = "104FinalProjectTeams.html#mariners">Seattle Mariners</a>
+                            <a href = "104FinalProjectTeams.html#cardinals">St. Louis Cardinals</a>
+                            <a href = "104FinalProjectTeams.html#rays">Tampa Bay Rays</a>
+                            <a href = "104FinalProjectTeams.html#rangers">Texas Rangers</a>
+                            <a href = "104FinalProjectTeams.html#jays">Toronto Blue Jays</a>
+                            <a href = "104FinalProjectTeams.html#nats">Washington Nationals</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "menuspacer">
+                    <a href = "104FinalProjectBlogs.html">Blogs</a>
+                </div>        
+            </div>
+            <div class = "teamcontent">
+                <div class = "card" id = "dbacks">
+                    <div class = "cardcontent">
+                        <img src = "img/dbacks.png" alt = "Diamondbacks">
+                        <h2>Arizona Diamondbacks</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Chase Field</li>
+                                <li>Manager: Torey Lovullo</li>
+                                <li>Year Founded: 1998</li>
+                                <li>Team OPS: .730</li>
+                                <li>Team ERA: 4.48</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 1</li>
+                                <li>Pennants: 2</li>
+                                <li>MVPs: 0</li>
+                                <li>Current Star Pitcher: Zac Gallen</li>
+                                <li>Current Star Hitter: Corbin Carroll</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "braves">
+                    <div class = "cardcontent">
+                        <img src = "img/braves.png" alt = "Braves">
+                        <h2>Atlanta Braves</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Truist Park</li>
+                                <li>Manager: Brian Snitker</li>
+                                <li>Year Founded: 1876</li>
+                                <li>Team OPS: .845</li>
+                                <li>Team ERA: 4.14</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 4</li>
+                                <li>Pennants: 18</li>
+                                <li>MVPs: 9</li>
+                                <li>Current Star Pitcher: Max Fried</li>
+                                <li>Current Star Hitter: Ronald Acuna Jr.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "orioles">
+                    <div class = "cardcontent">
+                        <img src = "img/orioles.png" alt = "Orioles">
+                        <h2>Baltimore Orioles</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Oriole Park</li>
+                                <li>Manager: Brandon Hyde</li>
+                                <li>Year Founded: 1901</li>
+                                <li>Team OPS: .742</li>                                
+                                <li>Team ERA: 3.89</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 3</li>
+                                <li>Pennants: 7</li>
+                                <li>MVPs: 6</li>
+                                <li>Current Star Pitcher: Kyle Bradish</li>
+                                <li>Current Star Hitter: Adley Rustchman</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "redsox">
+                    <div class = "cardcontent">
+                        <img src = "img/redsox.png" alt = "Red Sox">
+                        <h2>Boston Red Sox</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Fenway Park</li>
+                                <li>Manager: Alex Cora</li>
+                                <li>Year Founded: 1901</li>
+                                <li>Team OPS: .748</li>                                
+                                <li>Team ERA: 4.52</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 9</li>
+                                <li>Pennants: 14</li>
+                                <li>MVPs: 12</li>
+                                <li>Current Star Pitcher: Brayan Bello</li>
+                                <li>Current Star Hitter: Rafael Devers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "cubs">
+                    <div class = "cardcontent">
+                        <img src = "img/cubs.png" alt = "Cubs">
+                        <h2>Chicago Cubs</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Wrigley Field</li>
+                                <li>Manager: Craig Counsell</li>
+                                <li>Year Founded: 1876</li>
+                                <li>Team OPS: .751</li>                                
+                                <li>Team ERA: 4.08</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 3</li>
+                                <li>Pennants: 17</li>
+                                <li>MVPs: 11</li>
+                                <li>Current Star Pitcher: Marcus Stroman</li>
+                                <li>Current Star Hitter: Cody Bellinger</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "whitesox">
+                    <div class = "cardcontent">
+                        <img src = "img/whitesox.png" alt = "White Sox">
+                        <h2>Chicago White Sox</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Guaranteed Rate Field</li>
+                                <li>Manager: Pedro Grifol</li>
+                                <li>Year Founded: 1901</li>
+                                <li>Team OPS: .675</li>                                
+                                <li>Team ERA: 4.87</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 3</li>
+                                <li>Pennants: 6</li>
+                                <li>MVPs: 5</li>
+                                <li>Current Star Pitcher: Dylan Cease</li>
+                                <li>Current Star Hitter: Tim Anderson</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "reds">
+                    <div class = "cardcontent">
+                        <img src = "img/reds.png" alt = "Reds">
+                        <h2>Cincinnati Reds</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Great American Ball Park</li>
+                                <li>Manager: David Bell</li>
+                                <li>Year Founded: 1882</li>
+                                <li>Team OPS: .747</li>                                
+                                <li>Team ERA: 4.83</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 5</li>
+                                <li>Pennants: 9</li>
+                                <li>MVPs: 12</li>
+                                <li>Current Star Pitcher: Hunter Greene</li>
+                                <li>Current Star Hitter: Elly De La Cruz</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "guardians">
+                    <div class = "cardcontent">
+                        <img src = "img/guardians.png" alt = "Guardians">
+                        <h2>Cleveland Guardians</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Progressive Field</li>
+                                <li>Manager: Stephen Vogt</li>
+                                <li>Year Founded: 1901</li>
+                                <li>Team OPS: .694</li>                                
+                                <li>Team ERA: 3.96</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 2</li>
+                                <li>Pennants: 6</li>
+                                <li>MVPs: 3</li>
+                                <li>Current Star Pitcher: Shane Bieber</li>
+                                <li>Current Star Hitter: Jose Ramirez</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "rockies">
+                    <div class = "cardcontent">
+                        <img src = "img/rockies.png" alt = "Rockies">
+                        <h2>Colorado Rockies</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Coors Field</li>
+                                <li>Manager: Bud Black</li>
+                                <li>Year Founded: 1993</li>
+                                <li>Team OPS: .715</li>                                
+                                <li>Team ERA: 5.67</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 0</li>
+                                <li>Pennants: 1</li>
+                                <li>MVPs: 1</li>
+                                <li>Current Star Pitcher: German Marquez</li>
+                                <li>Current Star Hitter: Kris Bryant</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "tigers">
+                    <div class = "cardcontent">
+                        <img src = "img/tigers.png" alt = "Tigers">
+                        <h2>Detroit Tigers</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Comerica Park</li>
+                                <li>Manager: A.J. Hinch</li>
+                                <li>Year Founded: 1901</li>
+                                <li>Team OPS: .687</li>                                
+                                <li>Team ERA: 4.24</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 4</li>
+                                <li>Pennants: 11</li>
+                                <li>MVPs: 11</li>
+                                <li>Current Star Pitcher: Tarik Skubal</li>
+                                <li>Current Star Hitter: Javier Baez</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "astros">
+                    <div class = "cardcontent">
+                        <img src = "img/astros.png" alt = "Astros">
+                        <h2>Houston Astros</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Minute Maid Park</li>
+                                <li>Manager: Joey Espada</li>
+                                <li>Year Founded: 1962</li>
+                                <li>Team OPS: .768</li>                                
+                                <li>Team ERA: 3.94</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 2</li>
+                                <li>Pennants: 5</li>
+                                <li>MVPs: 2</li>
+                                <li>Current Star Pitcher: Framber Valdez</li>
+                                <li>Current Star Hitter: Yordan Alvarez</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "royals">
+                    <div class = "cardcontent">
+                        <img src = "img/royals.png" alt = "Royals">
+                        <h2>Kansas City Royals</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Kauffman Stadium</li>
+                                <li>Manager: Matt Quatraro</li>
+                                <li>Year Founded: 1969</li>
+                                <li>Team OPS: .701</li>                                
+                                <li>Team ERA: 5.17</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 2</li>
+                                <li>Pennants: 4</li>
+                                <li>MVPs: 1</li>
+                                <li>Current Star Pitcher: Brady Singer</li>
+                                <li>Current Star Hitter: Bobby Witt Jr.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "angels">
+                    <div class = "cardcontent">
+                        <img src = "img/angels.png" alt = "Angels">
+                        <h2>Los Angeles Angels</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Angel Stadium</li>
+                                <li>Manager: Ron Washington</li>
+                                <li>Year Founded: 1961</li>
+                                <li>Team OPS: .743</li>                                
+                                <li>Team ERA: 4.64</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 1</li>
+                                <li>Pennants: 1</li>
+                                <li>MVPs: 7</li>
+                                <li>Current Star Pitcher: Shohei Ohtani</li>
+                                <li>Current Star Hitter: Mike Trout</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "dodgers">
+                    <div class = "cardcontent">
+                        <img src = "img/dodgers.png" alt = "Dodgers">
+                        <h2>Los Angeles Dodgers</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Dodger Stadium</li>
+                                <li>Manager: Dave Roberts</li>
+                                <li>Year Founded: 1884</li>
+                                <li>Team OPS: .795</li>                                
+                                <li>Team ERA: 4.06</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 7</li>
+                                <li>Pennants: 24</li>
+                                <li>MVPs: 13</li>
+                                <li>Current Star Pitcher: Walker Buehler</li>
+                                <li>Current Star Hitter: Mookie Betts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "marlins">
+                    <div class = "cardcontent">
+                        <img src = "img/marlins.png" alt = "Marlins">
+                        <h2>Miami Marlins</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: LoanDepot Park</li>
+                                <li>Manager: Skip Schumaker</li>
+                                <li>Year Founded: 1993</li>
+                                <li>Team OPS: .721</li>                                
+                                <li>Team ERA: 4.21</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 2</li>
+                                <li>Pennants: 2</li>
+                                <li>MVPs: 1</li>
+                                <li>Current Star Pitcher: Sandy Alcantara</li>
+                                <li>Current Star Hitter: Luis Arraez</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "brewers">
+                    <div class = "cardcontent">
+                        <img src = "img/brewers.png" alt = "Brewers">
+                        <h2>Milwaukee Brewers</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: American Family Field</li>
+                                <li>Manager: Pat Murphy</li>
+                                <li>Year Founded: 1969</li>
+                                <li>Team OPS: .704</li>                                
+                                <li>Team ERA: 3.71</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 0</li>
+                                <li>Pennants: 1</li>
+                                <li>MVPs: 5</li>
+                                <li>Current Star Pitcher: Corbin Burnes</li>
+                                <li>Current Star Hitter: Christian Yelich</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "twins">
+                    <div class = "cardcontent">
+                        <img src = "img/twins.png" alt = "Twins"> 
+                        <h2>Minnesota Twins</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Target Field</li>
+                                <li>Manager: Rocco Baldelli</li>
+                                <li>Year Founded: 1901</li>
+                                <li>Team OPS: .754</li>                                
+                                <li>Team ERA: 3.87</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 3</li>
+                                <li>Pennants: 6</li>
+                                <li>MVPs: 8</li>
+                                <li>Current Star Pitcher: Pablo Lopez</li>
+                                <li>Current Star Hitter: Carlos Correa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "mets">
+                    <div class = "cardcontent">
+                        <img src = "img/mets.png" alt = "Mets">
+                        <h2>New York Mets</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Citi Field</li>
+                                <li>Manager: Carlos Mendoza</li>
+                                <li>Year Founded: 1962</li>
+                                <li>Team OPS: .723</li>                                
+                                <li>Team ERA: 4.30</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 2</li>
+                                <li>Pennants: 5</li>
+                                <li>MVPs: 0</li>
+                                <li>Current Star Pitcher: Kodai Senga</li>
+                                <li>Current Star Hitter: Pete Alonso</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "yankees">
+                    <div class = "cardcontent">
+                        <img src = "img/yankees.png" alt = "Yankees">
+                        <h2>New York Yankees</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Yankee Stadium</li>
+                                <li>Manager: Aaron Boone</li>
+                                <li>Year Founded: 1901</li>
+                                <li>Team OPS: .701</li>                                
+                                <li>Team ERA: 3.97</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 27</li>
+                                <li>Pennants: 40</li>
+                                <li>MVPs: 23</li>
+                                <li>Current Star Pitcher: Gerrit Cole</li>
+                                <li>Current Star Hitter: Aaron Judge</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "athletics">
+                    <div class = "cardcontent">
+                        <img src = "img/athletics.png" alt = "Athletics">
+                        <h2>Oakland Athletics</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Oakland Coliseum</li>
+                                <li>Manager: Mark Kotsay</li>
+                                <li>Year Founded: 1901</li>
+                                <li>Team OPS: .668</li>                                
+                                <li>Team ERA: 5.48</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 9</li>
+                                <li>Pennants: 15</li>
+                                <li>MVPs: 13</li>
+                                <li>Current Star Pitcher: Paul Blackburn</li>
+                                <li>Current Star Hitter: Brent Rooker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "phillies">
+                    <div class = "cardcontent">
+                        <img src = "img/phillies.png" alt = "Phillies">
+                        <h2>Philadelphia Phillies</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Citizens Bank Park</li>
+                                <li>Manager: Rob Thomson</li>
+                                <li>Year Founded: 1883</li>
+                                <li>Team OPS: .765</li>                                
+                                <li>Team ERA: 4.03</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 2</li>
+                                <li>Pennants: 8</li>
+                                <li>MVPs: 8</li>
+                                <li>Current Star Pitcher: Zac Wheeler</li>
+                                <li>Current Star Hitter: Bryce Harper</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "pirates">
+                    <div class = "cardcontent">
+                        <img src = "img/pirates.png" alt = "Pirates">
+                        <h2>Pittsburgh Pirates</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: PNC Park</li>
+                                <li>Manager: Derek Shelton</li>
+                                <li>Year Founded: 1882</li>
+                                <li>Team OPS: .707</li>                                
+                                <li>Team ERA: 4.60</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 5</li>
+                                <li>Pennants: 9</li>
+                                <li>MVPs: 8</li>
+                                <li>Current Star Pitcher: Mitch Keller</li>
+                                <li>Current Star Hitter: Bryan Reynolds</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "padres">
+                    <div class = "cardcontent">
+                        <img src = "img/padres.png" alt = "Padres">
+                        <h2>San Diego Padres</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Petco Park</li>
+                                <li>Manager: Mike Shildt</li>
+                                <li>Year Founded: 1969</li>
+                                <li>Team OPS: .742</li>                                
+                                <li>Team ERA: 3.73</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 0</li>
+                                <li>Pennants: 2</li>
+                                <li>MVPs: 1</li>
+                                <li>Current Star Pitcher: Blake Snell</li>
+                                <li>Current Star Hitter: Manny Machado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "giants">
+                    <div class = "cardcontent">
+                        <img src = "img/giants.png" alt = "Giants">
+                        <h2>San Francisco Giants</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Oracle Park</li>
+                                <li>Manager: Bob Melvin</li>
+                                <li>Year Founded: 1883</li>
+                                <li>Team OPS: .695</li>
+                                <li>Team ERA: 4.02</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 8</li>
+                                <li>Pennants: 23</li>
+                                <li>MVPs: 14</li>
+                                <li>Current Star Pitcher: Logan Webb</li>
+                                <li>Current Star Hitter: Joc Pederson</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "mariners">
+                    <div class = "cardcontent">
+                        <img src = "img/mariners.png" alt = "Mariners">
+                        <h2>Seattle Mariners</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: T-Mobile Park</li>
+                                <li>Manager: Scott Servais</li>
+                                <li>Year Founded: 1977</li>
+                                <li>Team OPS: .734</li>                                
+                                <li>Team ERA: 3.74</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 0</li>
+                                <li>Pennants: 0</li>
+                                <li>MVPs: 2</li>
+                                <li>Current Star Pitcher: Luis Castillo</li>
+                                <li>Current Star Hitter: Julio Rodriguez</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "cardinals">
+                    <div class = "cardcontent">
+                        <img src = "img/cardinals.png" alt = "Cardinals">
+                        <h2>St. Louis Cardinals</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Busch Stadium</li>
+                                <li>Manager:  Oliver Marmol</li>
+                                <li>Year Founded: 1882</li>
+                                <li>Team OPS: .742</li>                                
+                                <li>Team ERA: 4.79</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 11</li>
+                                <li>Pennants: 19</li>
+                                <li>MVPs: 21</li>
+                                <li>Current Star Pitcher: Jordan Montgomery</li>
+                                <li>Current Star Hitter: Nolan Arenado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "rays">
+                    <div class = "cardcontent">
+                        <img src = "img/rays.png" alt = "Rays">
+                        <h2>Tampa Bay Rays</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Tropicana Field</li>
+                                <li>Manager: Kevin Cash</li>
+                                <li>Year Founded: 1998</li>
+                                <li>Team OPS: .776</li>                                
+                                <li>Team ERA: 3.86</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 0</li>
+                                <li>Pennants: 2</li>
+                                <li>MVPs: 0</li>
+                                <li>Current Star Pitcher: Tyler Glasnow</li>
+                                <li>Current Star Hitter: Randy Arozarena</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "rangers">
+                    <div class = "cardcontent">
+                        <img src = "img/rangers.png" alt = "Rangers">
+                        <h2>Texas Rangers</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Globe Life Field</li>
+                                <li>Manager: Bruce Bochy</li>
+                                <li>Year Founded: 1961</li>
+                                <li>Team OPS: .789</li>                                
+                                <li>Team ERA: 4.28</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 1</li>
+                                <li>Pennants: 2</li>
+                                <li>MVPs: 6</li>
+                                <li>Current Star Pitcher: Jacob Degrom</li>
+                                <li>Current Star Hitter: Corey Seager</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "jays">
+                    <div class = "cardcontent">
+                        <img src = "img/bluejays.png" alt = "Blue Jays">
+                        <h2>Toronto Blue Jays</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Rogers Centre</li>
+                                <li>Manager: John Schneider</li>
+                                <li>Year Founded: 1977</li>
+                                <li>Team OPS: .746</li>                                
+                                <li>Team ERA: 3.78</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 2</li>
+                                <li>Pennants: 2</li>
+                                <li>MVPs: 2</li>
+                                <li>Current Star Pitcher: Kevin Gausman</li>
+                                <li>Current Star Hitter: Vladimir Guerrero Jr.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" id = "nats">
+                    <div class = "cardcontent">
+                        <img src = "img/nats.png" alt = "Nationals">
+                        <h2>Washington Nationals</h2>
+                    </div>
+                    <div class = "teaminfo">
+                        <div class = "generic">
+                            <ul>
+                                <li>Stadium: Nationals Park</li>
+                                <li>Manager: Dave Martinez</li>
+                                <li>Year Founded: 1969</li>
+                                <li>Team OPS: .710</li>                                
+                                <li>Team ERA: 5.02</li>
+                            </ul>
+                        </div>
+                        <div class = "extra">
+                            <ul>
+                                <li>World Series Wins: 1</li>
+                                <li>Pennants: 1</li>
+                                <li>MVPs: 1</li>
+                                <li>Current Star Pitcher: Josiah Gray</li>
+                                <li>Current Star Hitter: CJ Abrams</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
